@@ -1,0 +1,58 @@
+<html ng-app="AppModule">
+<head>
+    <meta charset="utf-8">
+    <title>Entity Validation</title>
+    <link href="./stylesheets/screen.css" rel="stylesheet">
+</head>
+
+<body ng-controller="AppCtrl">
+
+
+
+    <section class="employee-edit">
+        <header>
+            <h1>Employee Edit</h1>
+        </header>
+        <section>
+            <entity-form name="employeeForm" entity="editEmployee">
+
+                <entity-field label="Id" property-name="id"></entity-field>
+
+                <entity-field label="Nom" property-name="nom"></entity-field>
+
+                <entity-field label="Prenom" property-name="prenom"></entity-field>
+
+                <entity-field label="Email" property-name="email"></entity-field>
+
+                <div class="btn-wrap">
+                    <button ng-click="editEmployee.cancelChanges()" ng-disabled="!editEmployee.isModified()" ripple>
+                        <label><i class="fa fa-undo"></i> RESET</label>
+                    </button>
+                    <button class="colored" ripple>
+                        <label><i class="fa fa-user"></i> SAVE</label>
+                    </button>
+                </div>
+
+            </entity-form>
+        </section>
+    </section>
+</div>
+
+
+<script src="components/platform/platform.js"></script>
+<script src="components/jquery/dist/jquery.min.js"></script>
+<script src="components/lodash/dist/lodash.min.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/restangular/dist/restangular.js"></script>
+<script src="components/active-support/lib/active-support.js"></script>
+<script src="components/async/lib/async.js"></script>
+<script src="components/ngActiveResource/dist/ng-active-resource.js"></script>
+
+<script src="src/app/AppModule.js"></script>
+<script src="src/validation/ValidationModule.js"></script>
+<script src="src/validation/Validators.js"></script>
+<script src="src/validation/ValidatorsConfig.js"></script>
+<script src="src/effects/EffectsModule.js"></script>
+
+</body>
+</html>

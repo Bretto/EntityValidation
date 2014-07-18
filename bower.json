@@ -1,0 +1,24 @@
+{
+    "name": "EntityValidation",
+    "version": "0.0.0",
+    "authors": [
+        "Brett Coffin"
+    ],
+    "license": "MIT",
+    "main": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "latest",
+        "jquery": "latest",
+        "lodash": "latest"
+    },
+    "devDependencies": {
+        "angular-mocks": "latest"
+    }
+}
