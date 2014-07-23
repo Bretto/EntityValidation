@@ -1,0 +1,5 @@
+<div class="form-field">
+    <label>{{label}}</label>
+    <input type="text" ng-model="entity[propertyName]" ng-change="entity.validate(propertyName)" ng-blur="entity.validate(propertyName)" ng-class="{'alert-form-field': entity.errors[propertyName]}">
+    <div ng-show="entity.errors[propertyName]" class="alert-error">{{entity.errors[propertyName]}}</div>
+</div>
